@@ -18,3 +18,4 @@
 
 git clone https://github.com/fw876/helloworld package/lean/luci-app-ssr-plus
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/lean/luci-app-jd-dailybonus
+git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-app-serverchan
