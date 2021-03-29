@@ -193,5 +193,5 @@ jobs:
 
     - name: Send msg to Wechat
       env:
-        SCKEY: ${{ secrets.SENDKEY }}
+        SENDKEY: ${{ secrets.SENDKEY }}
       run: curl -d 'text=OpenWrt编译结束&desp=https://github.com/xydche/Actions-OpenWrt/releases' https://sctapi.ftqq.com/${SENDKEY}.send
