@@ -20,5 +20,5 @@
 git clone https://github.com/fw876/helloworld package/luci-app-ssr-plus
 # git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
 git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
-svn checkout https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-opentomato package/luci-theme-opentomato
-svn checkout https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-opentomcat package/luci-theme-opentomcat
+svn checkout https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-tomato package/luci-theme-tomato
+svn checkout https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-mcat package/luci-theme-mcat
