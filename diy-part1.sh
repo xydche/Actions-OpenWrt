@@ -14,15 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-
-#git clone https://github.com/jerrykuku/luci-app-vssr.git  package/lean/luci-app-vssr
-#git clone https://github.com/jerrykuku/lua-maxminddb.git  package/lean/lua-maxminddb
-git clone https://github.com/fw876/helloworld package/luci-app-ssr-plus
-# git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
-# git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
-# svn checkout https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-tomato package/luci-theme-tomato
-# svn checkout https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-mcat package/luci-theme-mcat
-cd package/luci-app-ssr-plus
-git checkout 00cd023b50f8736aee33c86c62df693487330444
+echo "src-git PWpackages https://github.com/xiaorouji/openwrt-passwall.git;packages" >> feeds.conf.default
+echo "src-git PWluci https://github.com/xiaorouji/openwrt-passwall.git;luci" >> feeds.conf.default
