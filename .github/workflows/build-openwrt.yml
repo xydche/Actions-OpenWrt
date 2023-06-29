@@ -50,14 +50,11 @@ jobs:
         [[ -n "${AGENT_TOOLSDIRECTORY}" ]] && sudo rm -rf "${AGENT_TOOLSDIRECTORY}"
         sudo -E rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d /usr/local/lib/android
         sudo -E apt-mark hold grub-efi-amd64-signed
-        sudo gem install apt-spy2
-
-        sudo apt-spy2 fix --commit --launchpad --country=US
-
-
+#       sudo gem install apt-spy2
+#       sudo apt-spy2 fix --commit --launchpad --country=US
         sudo -E apt update
         sudo -E apt -y purge azure-cli* docker* ghc* zulu* llvm* firefox google* dotnet* powershell* openjdk* mysql* php* mongodb* dotnet* moby* snap* || true
-        sudo -E apt -y install $(curl -fsSL https://is.gd/depend_ubuntu2204_openwrt)
+        sudo -E apt -y install $(cat dependson)
         sudo -E systemctl daemon-reload
         sudo -E apt -y full-upgrade
         sudo -E apt -y autoremove --purge
