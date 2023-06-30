@@ -204,4 +204,4 @@ jobs:
       env:
         SENDKEY: ${{ secrets.SENDKEY }}
         TAG: ${{ steps.tag.outputs.release_tag }}
-      run: curl -d 'text=OpenWrt编译结束&desp=https://github.com/${GITHUB_REPOSITORY}/releases/${TAG}' https://sctapi.ftqq.com/${SENDKEY}.send
+      run: curl -d "text=OpenWrt编译结束&desp=https://github.com/${GITHUB_REPOSITORY}/releases/${TAG}" https://sctapi.ftqq.com/${SENDKEY}.send
