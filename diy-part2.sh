@@ -19,3 +19,4 @@ wget -O tmp/adg.tar.gz https://github.com/AdguardTeam/AdGuardHome/releases/lates
 tar -zxvf tmp/adg.tar.gz -C tmp/
 mkdir -p files/usr/bin
 mv tmp/AdGuardHome/AdGuardHome files/usr/bin/
+ls files/usr/bin/
