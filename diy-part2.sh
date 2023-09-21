@@ -14,3 +14,8 @@
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
 sed -i '/KERNEL_PATCHVER/c KERNEL_PATCHVER:=5.15' target/linux/x86/Makefile
+
+wget -O tmp/adg.tar.gz https://github.com/AdguardTeam/AdGuardHome/releases/latest/download/AdGuardHome_linux_amd64.tar.gz
+tar -zxvf tmp/adg.tar.gz -C tmp/
+mkdir -p files/usr/bin
+mv tmp/AdGuardHome/AdGuardHome files/usr/bin/
