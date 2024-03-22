@@ -15,8 +15,8 @@
 
 sed -i '/KERNEL_PATCHVER/c KERNEL_PATCHVER:=5.15' target/linux/x86/Makefile
 
-# wget -O tmp/adg.tar.gz https://github.com/AdguardTeam/AdGuardHome/releases/latest/download/AdGuardHome_linux_amd64.tar.gz
-# tar -zxvf tmp/adg.tar.gz -C tmp/
-# mkdir -p files/usr/bin
-# mv tmp/AdGuardHome/AdGuardHome files/usr/bin/
-# ls files/usr/bin/
+wget -O tmp/adg.tar.gz https://github.com/AdguardTeam/AdGuardHome/releases/latest/download/AdGuardHome_linux_amd64.tar.gz
+tar -zxvf tmp/adg.tar.gz -C tmp/
+mkdir -p files/usr/bin
+mv tmp/AdGuardHome/AdGuardHome files/usr/bin/
+ls files/usr/bin/

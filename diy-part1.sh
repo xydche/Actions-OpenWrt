@@ -17,6 +17,8 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
 echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> "feeds.conf.default"
+echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall2.git;main" >> "feeds.conf.default"
 git clone https://github.com/xydche/luci-theme-design.git package/luci-theme-design
 git clone https://github.com/kenzok78/luci-app-adguardhome.git package/luci-app-adguardhome
-git clone https://github.com/sbwml/luci-app-mosdns.git -b v5 package/mosdns
+# git clone https://github.com/sbwml/luci-app-mosdns.git -b v5 package/mosdns
+# git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
