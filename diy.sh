@@ -8,4 +8,4 @@
 # git clone https://github.com/sbwml/luci-app-mosdns -b v5-lua package/mosdns
 # git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
-
+rm -rf feeds/luci/applications/luci-app-passwall
